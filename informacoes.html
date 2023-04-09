@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header2">
+        <!-- NavBar -->
+        <nav class="navbar">
+            <h1 class="logo">Facha</h1>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Início</a></li>
+                <li><a class="linksD" href="historia.html">História</a></li>
+                <li><a class="linksD" href="formulario.html">Formulário</a></li>
+                <li><a class="linksD" href="informacoes.html">Informações</a></li>
+                <li><a class="ctn" href="contactos.html">Contactos</a></li>
+            </ul>
+            <img src="Images/menubutton.png" alt="" class="menu-btn">
+        </nav>
+    </header>
+    <br><br>
+    <h1 class="title">Horário da Igreja</h1>
+    <div class="line"></div>
+    <div class="wrap texto-conteudo centrar">
+        <img class="img-conteudo" src="Images/Igreja.jpg" alt="Igreja">
+        <p>
+            Pároco: Pe. António Paulo da Silva Gomes<br>
+            Telefone: 969 087 420<br><br>
+            <b>Horário:</b><br>
+            Quarta-feira: 20h00<br>
+            Quinta-feira: 20h00<br>
+            Sexta-feira: 20h00<br>
+            Sábado: 20h00<br>
+            Domingo: 10h30<br>
+        </p>
+    </div>
+    <br><br>
+    <h1 class="title">Localização</h1>
+    <div class="line"></div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23827.288862808975!2d-8.6280039!3d41.71164695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd25ae4c5acd9047%3A0x500ebbde4911640!2sFacha!5e0!3m2!1spt-PT!2spt!4v1680987773647!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+        <section class="footer">
+            <p>© 2023 Junta de Freguesia de Facha. Todos os direitos reservados | Termos e Condições</p>
+            <p>Desenvolvido por:</p>
+            <p>João Cerqueira</p>
+        </section>
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+    
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+</body>
+</html>

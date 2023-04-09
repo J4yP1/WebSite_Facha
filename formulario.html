@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header2">
+    <!-- NavBar -->
+    <nav class="navbar">
+        <h1 class="logo">Facha</h1>
+        <ul class="nav-links">
+            <li><a class="active" href="index.html">Início</a></li>
+            <li><a class="linksD" href="historia.html">História</a></li>
+            <li><a class="linksD" href="formulario.html">Formulário</a></li>
+            <li><a class="linksD" href="informacoes.html">Informações</a></li>
+            <li><a class="ctn" href="contactos.html">Contactos</a></li>
+        </ul>
+        <img src="Images/menubutton.png" alt="" class="menu-btn">
+    </nav>
+    </header>
+
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Formulario de pedido</h3>
+            <input type="text" id="name" placeholder="Seu nome" required>
+            <input type="email" id="email" placeholder="Insira o seu e-mail" required>
+            <input type="text" id="phone" placeholder="Insira o seu numero de telemovel" required>
+            <textarea id="mensagem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <section class="footer">
+        <p>© 2023 Junta de Freguesia de Facha. Todos os direitos reservados | Termos e Condições</p>
+        <p>Desenvolvido por:</p>
+        <p>João Cerqueira</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

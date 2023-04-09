@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar">
+        <h1 class="logo">Facha</h1>
+        <ul class="nav-links">
+            <li><a class="active" href="index.html">Início</a></li>
+            <li><a class="linksD" href="historia.html">História</a></li>
+            <li><a class="linksD" href="formulario.html">Formulário</a></li>
+            <li><a class="linksD" href="informacoes.html">Informações</a></li>
+            <li><a class="ctn" href="contactos.html">Contactos</a></li>
+        </ul>
+        <img src="Images/menubutton.png" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Bem Vindo á Freguesia</h2>
+            <div class="line"></div>
+            <h1>FACHA</h1>
+            <a href="historia.html" class="ctn">Ver História</a>
+        </div>
+    </header>
+
+    <!-- == Events == -->
+    <section class="events">
+        <div class="title">
+            <h1>Património</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="Images/Igreja Da Facha 3.jpg" alt="" class="imgUE">
+                <h4>Igreja da Facha</h4>
+                <p>Como uma freguesia bastante católica esta edificação 
+                    é bastante frequentada pelos habitantes.</p>
+                <a href="informacoes.html" class="ctn">Ver Horário</a>
+            </div>
+            <div class="col">
+                <img src="Images/Quinta do Casal.jpg" alt="" class="imgUE">
+                <h4>Quinta do Casal</h4>
+                <p>Envolvida pelos montes de Nó e do Castelo, 
+                    um ambiente rústico e preservado.</p>
+                <a href="locaisVisitar.html" class="ctn">Ver Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>Sr. Da Rocha</h1>
+            <div class="line"></div>
+            <p>Santuário localizado no alto de um monte, 
+                possuindo no caminho a Capela de Nossa Senhora das Neves, 
+                com parque de merendas com mesas de pedra e sombra dada por 
+                ciprestes de Lawson e sobreiros.</p>
+            <a href="#" class="ctn">Voltar Para Cima</a>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>LOCAIS A VISITAR</h1>
+                <div class="line"></div>
+                <p>Aqui encontrará as melhores estadias desta freguesia.</p>
+                <a href="locaisVisitar.html" class="ctn">Ver Mais</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="Images/Quinta da Albergaria.jpg" alt="">
+                    <img src="Images/Quinta da Pedreira.jpg" alt="">
+                    <img src="Images/Quinta do Casal Oficial.jpg" alt="">
+                    <img src="Images/Casa das Torres.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>© 2023 Junta de Freguesia de Facha. Todos os direitos reservados | Termos e Condições</p>
+        <p>Desenvolvido por:</p>
+        <p>João Cerqueira</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

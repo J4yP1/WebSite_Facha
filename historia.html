@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header2">
+    <!-- NavBar -->
+    <nav class="navbar">
+        <h1 class="logo">Facha</h1>
+        <ul class="nav-links">
+            <li><a class="active" href="index.html">Início</a></li>
+            <li><a class="linksD" href="historia.html">História</a></li>
+            <li><a class="linksD" href="formulario.html">Formulário</a></li>
+            <li><a class="linksD" href="informacoes.html">Informações</a></li>
+            <li><a class="ctn" href="contactos.html">Contactos</a></li>
+        </ul>
+        <img src="Images/menubutton.png" alt="" class="menu-btn">
+    </nav>
+
+        <div class="header-content">
+            <h2>História da Facha</h2>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <content>
+        <div class="texto-historia">
+            <img class="img-conteudo" src="Images/sraRocha.jpg" alt="">
+            <p>Facha foi cabeça do Julgado ou Concelho de Santo Estêvão de Riba de Lima, extinto em 1836 e de que foi Tenente em 1128, Hermígio Moniz, irmão de Egas Moniz, com um passado histórico de que restam muitas reminiscências.<br>
+                O documento escrito mais antigo que se conhece é do século XI: “De Sancto Michaele de Laurdelo”, (do Censual de Braga)<br>
+                No outeiro de Santo Estêvão (capela pré-nacional) existiu um povoado castrejo que se chamou “Castelo Formoso”, designação que o culto de Santo Estêvão fez desaparecer, bem como a memória do povoado.<br>
+                O culto de Santo Estêvão, nessa localidade, deu origem ao nome do antigo Julgado ou Concelho de Santo Estêvão de Riba de Lima, extinto em 1836, integrando-se no actual de Ponte de Lima.<br>
+                O Julgado chamou-se assim porque ficava no sopé desse outeiro a sua Câmara ou Tribunal (ainda hoje conhecido o local por “Audiência”). Em 1127 foi Tenente (administrador) desse Julgado, Hermígio Moniz, irmão de Egas Moniz, cuja residência poderá ter sido a Casa do Paço, ainda com restos da construção gótica (duas portas) e que fica perto da sede do referido Julgado. No Paço apareceram há poucos anos os restos de uma casa castreja e uma necrópole e forno cerâmico do século IV.<br>
+                No monte do Castelo existiu um Castelo Medieval, de que ainda restam vestígios, que foi apoio e defesa do referido Julgado ou Concelho. O picoto do Castelo, onde ele se situava, também é conhecido, ainda hoje, por Alto do Facho, sinal que foi ou funcionou como ponto de sinalagem luminosa em tempos, que poderão vir já de época romana.<br>
+                Na freguesia há muitos vestígios de romanização: tégulas, cerâmicas, vasos de necrópoles, etc., bem como, em época alti-mediévica, vários topónimos de origem visigótica, cerâmicas, restos de um paço suevo-visigótico, onde apareceu também uma fíbula com inscrição cristã: “Cristus Sit Tecum” (“Cristo esteja contigo”), datado do século VI/VII.<br>
+                Do século XVI, há a casa que foi de Fernão Borges Pacheco, filho de Diogo Borges Pacheco, Fidalgo da Casa Real, Abade da Facha, fundador da Comenda da Facha, com a condição de ser seu primeiro comendador o seu dito filho, Diogo Borges Pacheco.<br>
+                No livro,Inventário Colectivo dos Registros Paroquiais Vol. 2 Norte Arquivos Nacionais /Torre do Tombo, tem-se a seguinte informação: «A primeira referência a S. Miguel da Facha, que se conhece, é de 1131. Denominava-se na época “Sancti Michaelis de Laurdelo “. Aparece com o mesmo nome numa outra doação, feita em 1158, à Sé de Braga. O primitivo topónimo foi substituído em meados do século XII, como se vê de um documento de 1169: “ecclesia Saneti Michaelis de Laurdelo que vocatur Fastia”.) com origem em “laurus-loureiro”.<br>
+                Nas Inquirições de D. Afonso III, de 1220, vem já referida sob a denominação de “Sancto Michaele de Fascha”, enquadrando-se na Terra de Santo Estêvão de Riba Lima.<br>
+                Em 1528, S. Miguel da Facha rendia cerca de 30 mil réis, e pertencia à Terra de Aguiar de Neiva. No foro administrativo, como cabeça do antigo concelho de Santo Estêvão da Facha, na antiga comarca de Viana, sendo seus donatários os viscondes de Vila Nova de Cerveira.<br>
+                Refira-se ainda que, em 1755, fez parte da comarca de Viana, passando a figurar em 1839, na de Ponte de Lima e, finalmente, em 1878, no julgado de Vitorino dos Piães.»<br>
+            </p>
+        </div>
+    </content>
+
+        <footer>
+            <section class="footer">
+                <p>© 2023 Junta de Freguesia de Facha. Todos os direitos reservados | Termos e Condições</p>
+                <p>Desenvolvido por:</p>
+                <p>João Cerqueira</p>
+            </section>
+        </footer>
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+    
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+</body>
+</html>

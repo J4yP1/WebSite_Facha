@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header2">
+        <!-- NavBar -->
+        <nav class="navbar">
+            <h1 class="logo">Facha</h1>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Início</a></li>
+                <li><a class="linksD" href="historia.html">História</a></li>
+                <li><a class="linksD" href="formulario.html">Formulário</a></li>
+                <li><a class="linksD" href="informacoes.html">Informações</a></li>
+                <li><a class="ctn" href="contactos.html">Contactos</a></li>
+            </ul>
+            <img src="Images/menubutton.png" alt="" class="menu-btn">
+        </nav>
+    </header>
+    <br>
+        <content>
+            <h1 class="title">Junta de Freguesia</h1>
+            <div class="line"></div>
+            <div class="texto-conteudo2 centrar">
+                <p>
+                    Morada:Caminho do Outeiro do Rio, n.º 280, Facha<br>
+                    Morada:4990-600, Ponte de Lima<br>
+                    Tel/Fax:258 028 205<br>
+                    Email: geral@jf-facha.pt<br><br>
+                    Horário:<br>SEGUNDA-FEIRA : 18:30 ÁS 19:30 Horas<br> QUINTA-FEIRA : 18:30 ÁS 19:30 Horas<br>
+                </p>
+            </div>
+
+            <h1 class="title">Outros</h1>
+            <div class="line"></div>
+            <div class="texto-conteudo2 centrar">
+                <p>
+                    Presidente: Tel/Fax:966896818<br>
+                    Secretário: Tel/Fax:967611261<br>
+                    Tesoureira: Tel/Fax:967949075<br>
+                </p>
+            </div>
+            
+        </content>
+
+        <br><br>
+        <section class="footer">
+            <p>© 2023 Junta de Freguesia de Facha. Todos os direitos reservados | Termos e Condições</p>
+            <p>Desenvolvido por:</p>
+            <p>João Cerqueira</p>
+        </section>
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+    
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+</body>
+</html>
